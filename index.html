@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EOS</title>
+    <script src="./keys.bundle.js"></script>
+    <script>
+        keys.generate((err, keys) => {
+          document.getElementById('keys').innerHTML = JSON.stringify(keys, null, "\t")
+        })
+    </script>
+</head>
+<body>
+    <pre id="keys"></pre>
+</body>
+</html>
